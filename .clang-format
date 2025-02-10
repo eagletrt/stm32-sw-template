@@ -8,3 +8,5 @@ AllowShortIfStatementsOnASingleLine: true
 IndentCaseBlocks: false
 IndentCaseLabels: true
 AlignAfterOpenBracket: true
+AlignConsecutiveMacros: true
+AlignConsecutiveAssignments: true
