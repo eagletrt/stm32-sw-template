@@ -388,14 +388,18 @@ Thumbs.db
 
 ### Binary and compiled files ###
 *.bin
-*.srec # motorola s-record file (file format for data transmition)
-       # from past projects
+*.srec
+# motorola s-record file (file format for data transmition)
+# from past projects
 
 ### STM32 & STM32CubeMX ###
 #this should be at root level
-!*.ioc # keep track of the board's configuration
-.mxproject # save parameters, configurations and pin mappings
-           # can give problems in version control
+!*.ioc
+# keep track of the board's configuration
+.mxproject
+# save parameters, configurations and pin mappings
+# can give problems in version control
+
 STM32Make.make
 .stm32env
 **/Debug/
@@ -406,8 +410,10 @@ STM32Make.make
 .debug_*
 
 ### IDE ###
-.cache/** # caching files from past projects
-.idea/** # jetbrains IDEs
+.cache/**
+# caching files from past projects
+.idea/**
+# jetbrains IDEs
 
 ### LOCAL IGNORE ###
 #in case git exclude is not used
