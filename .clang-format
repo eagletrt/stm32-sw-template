@@ -17,7 +17,7 @@ BinPackArguments: false
 BreakConstructorInitializers: BeforeColon
 Cpp11BracedListStyle: false
 DerivePointerAlignment: false
-PointerAlignment: Left
+PointerAlignment: Right
 SpaceBeforeParens: ControlStatements
 SpacesBeforeTrailingComments: 1
 SpaceAfterCStyleCast: false
