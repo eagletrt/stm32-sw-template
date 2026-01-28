@@ -4,7 +4,8 @@ from pathlib import Path
 
 # --- CONFIGURATION ---
 # Hardcoded list of subfolders to format (relative to project root)
-TARGET_DIRS = ["src", "include", "test"]
+# Tries to format everything by default
+TARGET_DIRS = ["."]
 
 # File extensions to format
 EXTENSIONS = {".c", ".cpp", ".cc", ".h", ".hpp", ".hh"}
