@@ -5,8 +5,8 @@ from pathlib import Path
 
 # --- CONFIGURATION ---
 # Hardcoded list of subfolders to format (relative to project root)
-# Tries to format everything by default
-TARGET_DIRS = ["."]
+# Tries by default it tries to format the Core subfolder
+TARGET_DIRS = ["Core"]
 
 # File extensions to format
 EXTENSIONS = {".c", ".cpp", ".cc", ".h", ".hpp", ".hh"}
@@ -113,7 +113,7 @@ def is_file_in_folders(file_path: Path, root: Path, folder_names) -> bool:
 
 
 def main():
-    logging.basicConfig(filename='formatter.log', level=logging.DEBUG)
+    logging.basicConfig(filename='formatter.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s',)
     LOGGER.info("Start")
     root = find_git_root()
     if not root:
